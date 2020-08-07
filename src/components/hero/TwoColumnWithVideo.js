@@ -15,7 +15,7 @@ const Container = tw.div`relative`;
 const TwoColumn = tw.div`flex flex-col lg:flex-row md:items-start max-w-screen-xl mx-auto py-20 md:py-24`;
 const LeftColumn = tw.div`relative lg:w-6/12 lg:pr-12 flex-shrink-0 text-left lg:text-left pt-16`;
 
-const Heading = tw.h1`font-medium font-display text-3xl md:text-5xl leading-snug max-w-3xl pl-8 pt-3 text-black`;
+const Heading = tw.h1`font-medium text-3xl md:text-5xl leading-snug max-w-3xl pl-8 pt-3 text-black`;
 
 const Actions = tw.div`flex flex-col items-start sm:flex-row justify-start lg:justify-start mt-8 pl-8`;
 const PrimaryButton = tw.button`shadow font-medium px-8 lg:px-6 py-3 rounded-full bg-primary-500 text-gray-100 hocus:bg-primary-900 focus:shadow-outline focus:outline-none transition duration-300`;

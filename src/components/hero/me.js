@@ -24,7 +24,7 @@ const Bio = tw.div`mt-24 md:flex justify-center items-center`;
 
 
 
-const Heading = tw.h1`font-medium font-display text-3xl md:text-5xl leading-snug max-w-3xl pl-8 pt-3 text-black`;
+const Heading = tw.h1`font-medium text-3xl md:text-5xl leading-snug max-w-3xl pl-8 pt-3 text-black`;
 const Paragraph = tw.p`my-2 lg:my-8 text-sm lg:text-base font-medium text-gray-600 max-w-lg mx-auto lg:mx-0 pl-8`;
 
 

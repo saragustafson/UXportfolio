@@ -264,7 +264,7 @@ module.exports = {
       default: '1',
     },
     fontFamily: {
-      display: ['Montserrat', 'system-ui'],
+      display: ['Inter', 'system-ui'],
       sans: [
         'Inter',
         'system-ui',
