@@ -13,14 +13,11 @@ import ST from '../../images/stst.png';
 import K12 from '../../images/k12.png';
 
 const Container = tw.div`relative`;
-
 const SingleColumn = tw.div`max-w-screen-xl mx-auto py-0 lg:py-0`;
-
-
-const Content = tw.div`mt-16 pl-8`;
+const Content = tw.div`pl-8`;
 
 const Card = styled.div(props => [
-  tw`mt-24 md:flex justify-center items-center `,
+  tw`mt-8 md:flex justify-center items-center `,
   props.reversed ? tw`flex-row-reverse` : "flex-row"
 ]);
 const Image = styled.div(props => [
@@ -30,19 +27,19 @@ const Image = styled.div(props => [
 const Details = tw.div`mt-4 md:mt-0 md:max-w-md mx-4 sm:mx-8 md:mx-4 lg:mx-8`;
 const Subtitle = tw.div`font-bold tracking-wide text-secondary-100`;
 const Title = tw.h1`text-3xl font-medium text-gray-900`;
-const Description = tw.p`mt-2 text-sm leading-loose`;
+const Description = tw.p`mt-2 text-sm leading-tight`;
 const Link = tw.a`inline-block mt-4 text-sm text-primary-500 font-bold cursor-pointer transition duration-300 border-b-2 border-transparent hover:border-primary-500`;
 
 
 const Blob1 = tw(
   SVGBlob1
-)`absolute top-0 left-0 transform  rotate-90 translate-y-32 translate-x-24 -z-10 opacity-50 text-primary-500 fill-current w-128`;
+)`absolute top-0 left-0 transform  rotate-90 translate-y-24 translate-x-24 -z-10 opacity-50 text-primary-500 fill-current w-128`;
 const Blob2 = tw(
   SVGBlob2
-)`absolute pt-32 top-0 right-0 transform translate-x-20 rotate-45 translate-y-144 -translate-x-12 -z-10 opacity-50 text-primary-500 fill-current w-144`;
+)`absolute pt-32 top-0 right-0 transform translate-x-20 rotate-45 mt-24 ml-80 translate-y-128 -translate-x-12 -z-10 opacity-50 text-primary-500 fill-current w-144`;
 const Blob3 = tw(
   SVGBlob1
-)`absolute pb-16 bottom-0 left-0 transform  -rotate-90 -translate-y-144 translate-x-24 -z-10 opacity-50 text-primary-500 fill-current w-128`;
+)`absolute pb-16 bottom-0 left-0 transform  -rotate-90 -translate-y-144 mb-24 translate-x-24 -z-10 opacity-50 text-primary-500 fill-current w-128`;
 const Blob4 = tw(
   SVGBlob2
 )`absolute bottom-0 right-0 transform -translate-x-10 rotate-90 -translate-y-1 -z-10 opacity-50 text-primary-500 fill-current w-128`;
@@ -71,7 +68,7 @@ export default () => {
       subtitle: "User Research",
       title: "K-12 Outreach Impact",
       description:"A research project to find connections between college students and their outreach experience.",
-      url: "/projects/k-12-outreach-impact"
+      url: "/projects/K-12-Outreach-Impact"
     },
 
     {
