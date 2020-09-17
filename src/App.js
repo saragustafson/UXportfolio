@@ -1,3 +1,7 @@
+// Template from https://treact.owaiskhan.me/
+// Thanks for a great starting point!
+
+
 import "tailwindcss/dist/base.css";
 import "styles/globalStyles.css";
 import React from "react";
@@ -10,6 +14,7 @@ import AnimationRevealPage from "helpers/AnimationRevealPage.js";
  import WSWS from "components/features/WSWS.js";
  import K12 from "components/features/K12.js";
  import ST from "components/features/ST.js";
+ import PORT from "components/features/PORT.js";
 import ComponentRenderer from "ComponentRenderer.js";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -27,6 +32,7 @@ export default function App({ location }) {
             <Route exact path="/projects/west-sound-wildlife-shelter" component={WSWS}/>
             <Route exact path="/projects/K-12-Outreach-Impact" component={K12}/>
             <Route exact path="/projects/seattle-transit" component={ST}/>
+            <Route exact path="/projects/UX-portfolio" component={PORT}/>
             <Route exact path="/me" component={Me} />
           </Switch>
         </div>

@@ -36,7 +36,6 @@ export const PrimaryLink = tw(NavLink)`
 
 export const LogoLink = styled(NavLink)`
   ${tw`flex items-center font-black border-b-0 text-2xl! ml-0!`};
-
   img {
     ${tw`w-16 mr-3 pt-1`}
   }
@@ -76,11 +75,6 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
       <NavLink href="/projects">Projects</NavLink>
       <NavLink href="/me">Me</NavLink>
       <NavLink href={SaraPDF} target="_blank">Resume</NavLink>
-      {/* <NavLink href="/#">Contact Us</NavLink> */}
-      {/* <NavLink href="/#" tw="lg:ml-12!">
-        Login
-      </NavLink>
-      <PrimaryLink css={roundedHeaderButton && tw`rounded-full`}href="/#">Sign Up</PrimaryLink> */}
     </NavLinks>
   ];
 
@@ -90,7 +84,6 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
   const defaultLogoLink = (
     <LogoLink href="/">
       <img src={logo} alt="logo" />
-      {/* Treact */}
     </LogoLink>
   );
 

@@ -6,6 +6,7 @@ import { ReactComponent as SVGBlob2 } from "../../images/fullblob2.svg";
 import { SectionHeading as HeadingTitle } from "../misc/Headings.js";
 import Header from "../headers/light.js";
 import Iframe from 'react-iframe'
+import gif from "../../images/gif.mp4";
 
 const Container = tw.div`relative`;
 const SingleColumn = tw.div`max-w-screen-xl mx-auto py-0 lg:py-0`;
@@ -27,16 +28,16 @@ const Blob1 = tw(
 
 export default ({
   primaryButtonText="Check out my case study!",
-  primaryButtonUrl="https://medium.com/@saram_88495/k-12-outreach-impact-8b827caa8e83",
+  primaryButtonUrl="https://medium.com/@saram_88495/",
   url="/projects",
-  nexprojurl="/projects/seattle-transit",
-  title="K-12 Outreach Impact",
-  description="A research project to find connections between college students and their outreach experience.",
+  nexprojurl="/projects/tattoo-artist-tool",
+  title="UX Portfolio",
+  description="A website to showcase my user experience design and research projects.",
   linebr= '. . .',
-  role="Role: UX Researcher & Designer",
-  timeline="Timeline: 6 months",
-  summary="Summary: We conducted user research using surveys and interviews to confirm the cyclical nature of outreach. Refined design skills by crafting outreach resources for the future of virtual K-12 outreach. ",
-  takeaway="Main Takeaway: User research unveils endless design opportunities, and pursuing an unexpected project is both challening and rewarding.",
+  role="Role: Designer",
+  timeline="Timeline: 3 months",
+  summary="Summary: Using a React framework, I developed a professional portfolio that adheres to my brand as a UX designer.",
+  takeaway="Main Takeaway: Understanding the web development process has taught me empathy, patience, and resilience.",
 
   }) => {
   
@@ -57,13 +58,13 @@ export default ({
             <Actions>
               <Link href={primaryButtonUrl} target="_blank">🖊 {primaryButtonText}</Link>
             </Actions>
-            <Link href={nexprojurl}>🚊 Next Project: Seattle Transit</Link>
+            <Link href={nexprojurl}>🎨 Next Project: Tattoo Artist Tool</Link>
           </Content>
             <Frame>
               <Iframe 
-                url="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FwcIap46z49NIqICR68VvoA%2FK-12-Charrette-Workbook%3Fnode-id%3D9%253A5%26viewport%3D-705%252C292%252C0.28151750564575195%26scaling%3Dmin-zoom&chrome=DOCUMENTATION"
-                width="800px"
-                height="450px"
+                url={gif}
+                width="550px"
+                height="278.495px"
                 id="myId"
                 display="initial"
                 position="relative"/>

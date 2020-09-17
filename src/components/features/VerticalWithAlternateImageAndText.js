@@ -11,13 +11,13 @@ import TAT from '../../images/TATAT.png';
 import WSWS from '../../images/wswsw.png';
 import ST from '../../images/stst.png';
 import K12 from '../../images/k12.png';
+import Port from '../../images/port.png';
 
 const Container = tw.div`relative`;
 const SingleColumn = tw.div`max-w-screen-xl mx-auto py-0 lg:py-0`;
 const Content = tw.div`pl-8`;
-
 const Card = styled.div(props => [
-  tw`mt-8 md:flex justify-center items-center `,
+  tw`mt-8 my-4 md:flex justify-center items-center `,
   props.reversed ? tw`flex-row-reverse` : "flex-row"
 ]);
 const Image = styled.div(props => [
@@ -30,20 +30,21 @@ const Title = tw.h1`text-3xl font-medium text-gray-900`;
 const Description = tw.p`mt-2 text-sm leading-tight`;
 const Link = tw.a`inline-block mt-4 text-sm text-primary-500 font-bold cursor-pointer transition duration-300 border-b-2 border-transparent hover:border-primary-500`;
 
-
-const Blob1 = tw(
+const Blob1 = tw.div(
   SVGBlob1
 )`absolute top-0 left-0 transform  rotate-90 translate-y-24 translate-x-24 -z-10 opacity-50 text-primary-500 fill-current w-128`;
-const Blob2 = tw(
+const Blob2 = tw.div(
   SVGBlob2
-)`absolute pt-32 top-0 right-0 transform translate-x-20 rotate-45 mt-24 ml-80 translate-y-128 -translate-x-12 -z-10 opacity-50 text-primary-500 fill-current w-144`;
-const Blob3 = tw(
+)`absolute pt-32 top-0 right-0 transform rotate-45 mt-16 ml-80 translate-y-128 -translate-x-4 -z-10 opacity-50 text-primary-500 fill-current w-144`;
+const Blob3 = tw.div(
   SVGBlob1
-)`absolute pb-16 bottom-0 left-0 transform  -rotate-90 -translate-y-144 mb-24 translate-x-24 -z-10 opacity-50 text-primary-500 fill-current w-128`;
-const Blob4 = tw(
+)`absolute bottom-0 left-0 transform -rotate-90 translate-x-24 -translate-y-full mb-144 -z-10 opacity-50 text-primary-500 fill-current w-128`;
+const Blob4 = tw.div(
   SVGBlob2
-)`absolute bottom-0 right-0 transform -translate-x-10 rotate-90 -translate-y-1 -z-10 opacity-50 text-primary-500 fill-current w-128`;
-
+)`absolute bottom-0 right-0 transform -translate-x-10 -translate-y-128 rotate-90 -z-10 opacity-50 text-primary-500 fill-current w-144`;
+const Blob5 = tw.div(
+  SVGBlob1
+)`absolute bottom-0 left-0 transform -rotate-45 translate-x-24 -z-10 opacity-50 text-primary-500 fill-current w-128`;
 
 export default () => {
   const cards = [
@@ -52,7 +53,7 @@ export default () => {
       subtitle: "Case Study",
       title: "Tattoo Artist Tool",
       description: "A tool used to help manage the busy lives of tattoo artists.",
-      url: "/projects/tattoo-artist-tool"
+      url: "/projects/tattoo-artist-tool",
     },
 
     {
@@ -60,7 +61,7 @@ export default () => {
       subtitle: "Brand Redesign",
       title: "West Sound Wildlife Shelter",
       description:"A redesign of a Seattle non-profit wildlife organization",
-      url: "/projects/west-sound-wildlife-shelter"
+      url: "/projects/west-sound-wildlife-shelter",
     },
 
     {
@@ -68,7 +69,7 @@ export default () => {
       subtitle: "User Research",
       title: "K-12 Outreach Impact",
       description:"A research project to find connections between college students and their outreach experience.",
-      url: "/projects/K-12-Outreach-Impact"
+      url: "/projects/K-12-Outreach-Impact",
     },
 
     {
@@ -76,7 +77,15 @@ export default () => {
       subtitle: "Brand Redesign",
       title: "Seattle Transit",
       description:"A redesign of the Seattle Public Transporation visual system",
-      url: "/projects/seattle-transit"
+      url: "/projects/seattle-transit",
+    },
+
+    {
+      imageSrc: Port,
+      subtitle: "Web Development",
+      title: "UX Portfolio",
+      description:"A UX portfolio created using a React framework",
+      url: "/projects/ux-portfolio",
     }
   ];
 
@@ -84,7 +93,6 @@ export default () => {
     <Container>
       <Header />
       <SingleColumn>
-
         <Content>
           {cards.map((card, i) => (
             <Card key={i} reversed={i % 2 === 1}>
@@ -101,11 +109,11 @@ export default () => {
           ))}
         </Content>
       </SingleColumn>
-      
       <Blob1 />
       <Blob2 />
       <Blob3 />
       <Blob4 /> 
+      <Blob5 /> 
     </Container>
   );
 };
