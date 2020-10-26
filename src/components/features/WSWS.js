@@ -29,7 +29,7 @@ const Blob1 = tw(
 
 export default ({
   primaryButtonText="Check out my case study!",
-  primaryButtonUrl="https://medium.com/@saram_88495",
+  primaryButtonUrl="https://medium.com/@saram_88495/nonprofits-owl-facts-a-brand-redesign-57b4af77037e",
   url="/projects",
   projurl="/projects/K-12-Outreach-Impact",
   title="West Sound Wildlife Shelter",

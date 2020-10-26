@@ -29,7 +29,7 @@ const Blob1 = tw(
 
 export default ({
   primaryButtonText="Check out my case study!",
-  primaryButtonUrl="https://medium.com/@saram_88495",
+  primaryButtonUrl="https://medium.com/@saram_88495/salmon-is-a-seattle-color-eb5d0390ca60",
   url="/projects",
   projurl="/projects/ux-portfolio",
   title="Seattle Transit",

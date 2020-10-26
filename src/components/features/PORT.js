@@ -28,7 +28,7 @@ const Blob1 = tw(
 
 export default ({
   primaryButtonText="Check out my case study!",
-  primaryButtonUrl="https://medium.com/@saram_88495/",
+  primaryButtonUrl="https://medium.com/@saram_88495/programming-for-designers-101-e99439d70fb0",
   url="/projects",
   nexprojurl="/projects/tattoo-artist-tool",
   title="UX Portfolio",
